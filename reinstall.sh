@@ -4,7 +4,7 @@
 disc="wget https://dl.discordapp.net/apps/linux/0.0.61/discord-0.0.61.deb && sudo dpkg -i discord-0.0.61.deb"
 flatpak="flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo"
 tg="flatpak install flathub org.telegram.desktop"
-balena="wget https://github.com/balena-io/etcher/releases/download/v1.19.22/balena-etcher_1.19.22_amd64.deb && sudo dpkg -i balena-etcher_1.19.22_amd64.deb"
+#balena="wget https://github.com/balena-io/etcher/releases/download/v1.19.22/balena-etcher_1.19.22_amd64.deb && sudo dpkg -i balena-etcher_1.19.22_amd64.deb"
 opera="flatpak install flathub com.opera.Opera"
 spoty="flatpak install flathub com.spotify.Client"
 tw="wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb && sudo dpkg -i teamviewer_amd64.deb"
@@ -32,7 +32,7 @@ do_command() {
             sudo apt install chromium neofetch inxi gimp gparted simple-scan git gpaste-2 pluma virt-manager ghostwriter qbittorrent vlc vokoscreen-ng bleachbit zulucrypt-gui geany flatpak plasma-discover-backend-flatpak bash-completion && eval $flatpak
             ;;
         3)
-            eval $disc && eval $tg && eval $balena && eval $opera && eval $spoty && eval $tw
+            eval $disc && eval $tg && eval $opera && eval $spoty && eval $tw
             ;;
         0)
             exit 0
