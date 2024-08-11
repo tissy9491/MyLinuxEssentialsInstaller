@@ -29,7 +29,7 @@ do_command() {
             sudo apt update && sudo apt full-upgrade
             ;;
         2)
-            sudo apt install chromium neofetch inxi gimp gparted simple-scan git gpaste pluma virt-manager ghostwriter qbittorrent vlc vokoscreen-ng bleachbit zulucrypt-gui geany flatpak plasma-discover-backend-flatpak bash-completion && eval $flatpak
+            sudo apt install chromium neofetch inxi gimp gparted simple-scan git gpaste-2 pluma virt-manager ghostwriter qbittorrent vlc vokoscreen-ng bleachbit zulucrypt-gui geany flatpak plasma-discover-backend-flatpak bash-completion && eval $flatpak
             ;;
         3)
             eval $disc && eval $tg && eval $balena && eval $opera && eval $spoty && eval $tw
